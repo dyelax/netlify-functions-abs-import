@@ -1,0 +1,9 @@
+[build]
+  functions = "lambda-build"
+  command = "npm build"
+  publish = "build"
+
+[[redirects]]
+  from = "/p/*"
+  to = "/.netlify/functions/test-function"
+  status = 200
