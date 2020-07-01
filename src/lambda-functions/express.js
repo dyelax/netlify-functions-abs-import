@@ -7,8 +7,8 @@ import serverless from 'serverless-http'
 const app = express();
 const router = express.Router();
 
-router.get('/', async (req, res) => {
-  const app = ReactDOMServer.renderToString(<App id={req.query.id} />);
+router.get('*', async (req, res) => {
+  const app = ReactDOMServer.renderToString(<App path={req.path} />);
   return res.status(200).send(app);
 });
 
