@@ -1,6 +1,6 @@
 [build]
   functions = "lambda-build"
-  command = "npm run build"
+  command = "npm run build && npm run lambda-build"
   publish = "build"
 
 [[redirects]]
