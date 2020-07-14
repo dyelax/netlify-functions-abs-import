@@ -2,13 +2,3 @@
   functions = "lambda-build"
   command = "npm run build && npm run lambda-build"
   publish = "build"
-
-[[redirects]]
-  from = "/e/*"
-  to = "/.netlify/functions/express"
-  status = 200
-
-[[redirects]]
-  from = "/d/*"
-  to = "/.netlify/functions/default"
-  status = 200
