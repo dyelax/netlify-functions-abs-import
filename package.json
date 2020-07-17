@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lambda": "netlify-lambda serve src/lambda-functions",
-    "lambda-build": "netlify-lambda build src/lambda-functions"
+    "lambda-build": "netlify-lambda build src/lambda-functions --config ./webpack.config.js"
   },
   "eslintConfig": {
     "extends": "react-app"
