@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "express": "^4.17.1",
+    "global": "^4.4.0",
     "http-proxy-middleware": "^1.0.4",
     "netlify-lambda": "^1.6.3",
     "react": "^16.13.1",
@@ -20,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lambda": "netlify-lambda serve src/lambda-functions",
-    "lambda-build": "netlify-lambda build src/lambda-functions --config ./webpack.config.js"
+    "lambda-build": "netlify-lambda build src/lambda-functions"
   },
   "eslintConfig": {
     "extends": "react-app"

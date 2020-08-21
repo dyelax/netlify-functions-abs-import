@@ -1,5 +1,8 @@
-import { testFunc } from 'utils.js';
+import React from 'react';
 
-const App = props => {testFunc()}
+const App = props => {
+  let content = typeof window === 'undefined' ? 'server' : 'client'
+  return <p>{content}</p>
+}
 
 export default App;
