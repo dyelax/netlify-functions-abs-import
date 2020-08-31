@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 const App = props => {
   const [onClient, setOnClient] = useState(false)
+  console.log('window1', window)
   useEffect(() => {
     setOnClient(true)
     console.log('onClient');
-    console.log(window);
+    console.log('window2', window)
   }, [])
 
   return (
