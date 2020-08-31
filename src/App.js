@@ -4,6 +4,8 @@ const App = props => {
   const [onClient, setOnClient] = useState(false)
   useEffect(() => {
     setOnClient(true)
+    console.log('onClient');
+    console.log(window);
   }, [])
 
   return (
